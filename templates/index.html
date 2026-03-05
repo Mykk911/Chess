@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Шахматы с ИИ</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>2D Шахматы с ИИ</h1>
+
+    <section class="controls">
+      <label>
+        Уровень ИИ:
+        <select id="level">
+          <option value="100">100</option>
+          <option value="500">500</option>
+          <option value="1000" selected>1000</option>
+          <option value="1500">1500</option>
+          <option value="2000">2000</option>
+        </select>
+      </label>
+
+      <label>
+        Твой цвет:
+        <select id="humanColor">
+          <option value="white" selected>Белые</option>
+          <option value="black">Чёрные</option>
+        </select>
+      </label>
+
+      <button id="newGame">Новая игра</button>
+    </section>
+
+    <p id="status">Загрузка...</p>
+    <p id="error" class="error"></p>
+
+    <section id="board" class="board"></section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
